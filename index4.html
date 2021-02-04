@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex training</title>
+    <style>
+        .padre{
+            display: flex;/* pasa els elements flexibles */
+            height: 100hv;
+            border: 15px solid red;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .hijo1{
+            background-color: greenyellow;
+            height: 150px;
+            flex-grow: 1;
+        }
+        .hijo2{
+            background-color: hotpink;
+            height: 150px;
+            flex: 1 0 200px;
+        }
+        .hijo3{
+            background-color: indigo;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+  <div class="padre">
+          <div class="hijo1">Hijo1</div>
+          <div class="hijo2">Hijo2</div>
+          <div class="hijo3">Hijo3</div>  
+   </div>
+</body>
+</html>

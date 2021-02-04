@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex2 Layout grid</title>
+    <style>
+        body{
+            
+            margin: auto;
+            background-color: rgb(221, 221, 221);
+        }
+        nav{
+            background-color: rgb(105, 105, 105);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .nav1{
+           display: flex;
+           width: 100px;
+           height: 30px;
+           background-color: rgb(255, 255, 75);
+           margin: 20px;
+           justify-content: center;
+        } 
+        .nav2 ul{
+            display: flex;
+            justify-content: space-around;
+             width: 300px;
+             }
+
+        .nav2 ul li{
+            width: 60px;
+            height: 30px;
+            background-color: rgb(255, 255, 87);
+            list-style: none;
+        }
+        .main {
+        background-color: gray;
+        display: grid;
+        grid-template-rows: 2fr 9fr 20px 9fr 20px 3fr 2fr;
+        grid-template-columns: 0.5fr 3fr 0.8fr 3fr 0.8fr 3fr 0.5fr;
+    }
+    #circulo1 {
+        width: 60px;
+        height: 60px;
+        background: gray;
+        border-radius: 1000px;}
+
+    #circulo2 {
+        width: 60px;
+        height: 60px;
+        background: gray;
+        border-radius: 1000px;}
+        .hijo5 {
+        background-color: rgba(255, 0, 0, 0.603);
+        grid-row: 2/3;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hijo6 {
+        background-color: rgba(255, 0, 0, 0.603);
+        grid-row: 4/5;
+        grid-column: 2/3;
+    }
+
+    .hijo7 {
+        background-color: rgba(255, 0, 0, 0.603);
+        grid-row: 2/3;
+        grid-column: 4/7;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+    }
+
+    .hijo8 {
+        background-color: rgba(255, 0, 0, 0.603);
+        grid-row: 4/5;
+        grid-column: 4/5;
+    }
+
+    .hijo9 {
+        background-color: rgba(255, 0, 0, 0.603);
+        grid-row: 4/5;
+        grid-column: 6/7;
+    }
+
+    .hijo10 {
+        background-color: purple;
+        grid-row: 6/7;
+        grid-column: 4/5;
+    }
+    .contenido {
+        margin: 21px;
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-rows: 30px 350px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav1">
+
+        </div>
+        <div class="nav2">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="hijo5">
+            <div id="circulo1"></div>
+        </div>
+        <div class="hijo6"></div>
+        <div class="hijo7">
+            <div id="circulo2"></div>
+            <div id="circulo2"></div>
+            <div id="circulo2"></div>
+        </div>
+        <div class="hijo8"></div>
+        <div class="hijo9"></div>
+        <div class="hijo10"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grill</title>
+    <style>
+        h2{
+            text-align:center;
+        }
+        body{  /* pareee */
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-template-areas: "nav header aside"
+             ". main aside"
+             "footer footer footer";
+        }
+        @media screen  and (max-width: 500px){
+            body{
+            display: grid;
+            grid-gap: 10px, 10px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-template-areas: "nav header aside"
+             "nav main main"
+             "footer footer footer";
+        }
+        }
+        
+        header{
+            background-color: azure;
+            grid-area: header;
+        }
+        main{
+            background-color: blanchedalmond;
+            grid-area: main;
+            
+        }
+        section#ropa article{
+            display: flex;
+            justify-content: space-between;
+        }
+        aside{
+            background-color: crimson;
+            
+        }
+        footer{
+            background-color: cyan;
+            grid-area: footer;
+            justify-content: space-around;
+            display: flex;
+        }
+        nav{
+            top: 30px;
+            background-color: aqua;
+            grid-area: nav;
+            
+            place-self: center center;
+        }
+        
+        nav ul a{
+            text-decoration: none;
+        }
+
+        main section{
+            display:flex;
+            justify-content: space-between;
+            
+        }
+        
+        
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+             <li><a href="#news">News</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <hgroup>
+
+        </hgroup>
+        <figure>
+            <img src="https://previews.123rf.com/images/haritonoff/haritonoff1811/haritonoff181100273/113117016-geologist-s-hand-strikes-a-limestone-mossy-rock-with-a-geological-hammer-to-take-a-sample.jpg" alt="" height="150px">
+            <figcaption>
+               <details>
+                   <summary>
+                    
+                   </summary>
+                   
+               </details>
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <h2>Minerales</h2>
+        <section id="minerales">
+            <article>
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2014/05/16/16/06/pyrite-345637_1280.jpg" alt="" height="250px">
+                    <figcaption>
+                       <details>
+                           <summary>
+                               fig.1 clica per a mes detals
+                           </summary>
+                             pirita
+                             n ancient Roman times, this name was applied to several types of stone that 
+                             would create sparks when struck against steel; Pliny the Elder described one of them 
+                             as being brassy, almost certainly a reference to what we now call pyrite.
+                       </details>
+                    </figcaption>
+                </figure>
+            </article>
+            <article>
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2016/08/16/17/32/fluorite-1598476_1280.jpg" alt="" height="250px">
+                    <figcaption>
+                       <details>
+                           <summary>
+                            fig.1 clica per a mes detals
+                           </summary>
+                           fluorita
+                       </details>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+        <section id="fosiles">
+            <h2>Fósiles</h2>
+        <article>
+            <figure>
+                <img src="https://cdn.pixabay.com/photo/2013/10/26/12/13/fossil-201044_1280.jpg" alt="" height="250px">
+                <figcaption>
+                   <details>
+                       <summary>
+                           fig.1 clica per a mes detals
+                       </summary>
+                         pez mioceno
+                   </details>
+                </figcaption>
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img src="https://cdn.pixabay.com/photo/2016/02/16/09/43/ignita-1202985_1280.jpg" alt="" height="250px">
+                <figcaption>
+                   <details>
+                       <summary>
+                           fig.1 clica per a mes detals
+                       </summary>
+                         icnita
+                   </details>
+                </figcaption>
+            </figure>
+        </article>
+        </section>
+    </main>
+    <aside>
+        <h3>newletter</h3>
+        <form action="" method="">
+            <label for="email">email</label>
+            <input type="email">
+        </form>
+    </aside>
+    <footer>
+        <p> Nombre autor</p>
+        <p>nombre empresa</p>
+        <p>redes sociales</p>
+    </footer>
+</body>
+</html>
